@@ -1,7 +1,6 @@
 package org.example.open_closed;
 
 public class Song implements  Measurable{
-
   private Double duration;
   private Double sentDuration;
 
@@ -11,12 +10,7 @@ public class Song implements  Measurable{
   }
 
   @Override
-  public Double getTotalLength() {
-    return duration;
-  }
-
-  @Override
-  public Double getSentLength() {
-    return sentDuration;
+  public Double getSentLengthPercentage() {
+    return sentDuration * 100 / duration;
   }
 }

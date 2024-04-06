@@ -9,13 +9,9 @@ public class File implements  Measurable{
     this.size = size;
     this.sentSize = sentSize;
   }
-  @Override
-  public Double getTotalLength() {
-    return size;
-  }
 
   @Override
-  public Double getSentLength() {
-    return sentSize;
+  public Double getSentLengthPercentage() {
+    return sentSize * 100 / size;
   }
 }

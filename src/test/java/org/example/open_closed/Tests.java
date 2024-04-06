@@ -7,12 +7,12 @@ class Tests {
   @Test
   void testSongConsumptionPercentage() {
     Measurable song = new Song(180.0, 30.0);
-    Assertions.assertEquals(16.66, Progress.getSentLengthPercentage(song), 0.1);
+    Assertions.assertEquals(16.66, song.getSentLengthPercentage(), 0.1);
   }
 
   @Test
   void testFileReadPercentage() {
     Measurable file = new File(1024.0, 24.0);
-    Assertions.assertEquals(2.3, Progress.getSentLengthPercentage(file), 0.1);
+    Assertions.assertEquals(2.3, file.getSentLengthPercentage(), 0.1);
   }
 }
