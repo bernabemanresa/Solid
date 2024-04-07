@@ -4,32 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c4d90dd-e598-47cc-b92f-a914ee6d958a" name="Changes" comment="Update pom">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/DemoApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentAdder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentDeletion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/CD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Document.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/ports/DocumentAdder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/ports/DocumentDeletion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/ports/DocumentFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/ports/DocumentsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/infrastucture/InMemoryDocumentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="0c4d90dd-e598-47cc-b92f-a914ee6d958a" name="Changes" comment="Create Basic in memory CRUD">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Artist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/DocumentIdentifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/DocumentTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Editorial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bernabemanresa/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/File.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/Measurable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/Song.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/open_closed/Tests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentFinder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/CD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/CD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/infrastucture/InMemoryDocumentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/infrastucture/InMemoryDocumentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,6 +50,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="bernabemanresa.domain.valueobjects" />
+      <recent name="bernabemanresa.domain.ports" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="org" />
     </key>
@@ -185,32 +176,22 @@
       <option name="project" value="LOCAL" />
       <updated>1712413058911</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create Basic in memory CRUD">
+      <option name="closed" value="true" />
+      <created>1712482297111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712482297111</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Update pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update pom" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java</url>
-          <line>54</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Create Basic in memory CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Basic in memory CRUD" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

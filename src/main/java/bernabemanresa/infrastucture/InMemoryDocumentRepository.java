@@ -10,12 +10,12 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class InMemoryDocumentRepository implements DocumentsRepository {
 
-  private  List<Document> documents = new ArrayList<>();
+  private List<Document> documents = new ArrayList<>();
 
   @Override
   public Document getById(String id) {
     return documents.stream()
-        .filter(doc -> doc.getId().equals(id))
+        .filter(doc -> doc.getDocumentIdentifier().value().equals(id))
         .findFirst().orElseThrow();
   }
 
@@ -31,6 +31,6 @@ public class InMemoryDocumentRepository implements DocumentsRepository {
 
   @Override
   public void delete(Document document) {
-    documents.removeIf(doc -> doc.getId().equals(document.getId()));
+    documents.removeIf(doc -> doc.getDocumentIdentifier().equals(document.getDocumentIdentifier()));
   }
 }

@@ -7,6 +7,9 @@ import bernabemanresa.domain.Document;
 import bernabemanresa.domain.ports.DocumentAdder;
 import bernabemanresa.domain.ports.DocumentDeletion;
 import bernabemanresa.domain.ports.DocumentFinder;
+import bernabemanresa.domain.valueobjects.DocumentIdentifier;
+import bernabemanresa.domain.valueobjects.DocumentTitle;
+import bernabemanresa.domain.valueobjects.Editorial;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -26,49 +29,58 @@ class Tests {
   @Autowired
   DocumentDeletion documentDeletion;
 
+  private static Book getBook(String number) {
+    return Book.builder()
+        .editorial(Editorial.builder().value("Fantastic Books").build())
+        .title(DocumentTitle.builder().value("2001").build())
+        .documentIdentifier(new DocumentIdentifier(number))
+        .build();
+  }
+
   @BeforeEach
-  void beforeAll() {
-    documentDeletion.delete(new Book("1", "2001", "Fantastic Books"));
-    documentDeletion.delete(new Book("2", "Me, Robot", "Fantastic Books"));
+  void beforeAll() throws Exception {
+    documentDeletion.delete(getBook("1"));
   }
 
   @Test
-  void saveDocument() {
-    Document book = new Book("1", "2001", "Fantastic Books");
+  void saveDocument() throws Exception {
+    documentAdder.add(getBook("1"));
   }
 
   @Test
-  void getDocument() {
-    Document book = new Book("1", "2001", "Fantastic Books");
-    documentAdder.add(book);
-    Document d = documentFinder.find(book);
-    Assertions.assertEquals(book, d);
+  void getDocument() throws Exception {
+    documentAdder.add(getBook("1"));
+    Document d = documentFinder.find(getBook("1"));
+    Assertions.assertEquals(getBook("1"), d);
   }
 
   @Test
-  void getAllDocuments() {
-    documentAdder.add(new Book("1", "2001", "Fantastic Books"));
-    documentAdder.add(new Book("2", "Me, Robot", "Fantastic Books"));
+  void getAllDocuments() throws Exception {
+    documentAdder.add(getBook("1"));
+    documentAdder.add(getBook("2"));
     final List<Document> retrievedDocuments = documentFinder.findAll();
     Assertions.assertEquals(2, retrievedDocuments.size());
 
     Assertions.assertEquals(1,
-        retrievedDocuments.stream().filter(document -> document.getId().equals("1")).count());
+        retrievedDocuments.stream()
+            .filter(document -> document.getDocumentIdentifier().value().equals("1"))
+            .count());
     Assertions.assertEquals(1,
-        retrievedDocuments.stream().filter(document -> document.getId().equals("2")).count());
+        retrievedDocuments.stream()
+            .filter(document -> document.getDocumentIdentifier().value().equals("2"))
+            .count());
 
   }
+
   @Test
-  void deleteDocument(){
-    documentAdder.add(new Book("1", "2001", "Fantastic Books"));
-    documentAdder.add(new Book("2", "Me, Robot", "Fantastic Books"));
+  void deleteDocument() throws Exception {
+    documentAdder.add(getBook("1"));
+    documentAdder.add(getBook("2"));
     final List<Document> retrievedDocuments = documentFinder.findAll();
     Assertions.assertEquals(2, retrievedDocuments.size());
-    documentDeletion.delete(new Book("1", "2001", "Fantastic Books"));
+    documentDeletion.delete(getBook("1"));
     Assertions.assertEquals(1, retrievedDocuments.size());
-    documentDeletion.delete(new Book("2", "Me, Robot", "Fantastic Books"));
+    documentDeletion.delete(getBook("2"));
     Assertions.assertTrue(retrievedDocuments.isEmpty());
   }
-
-
 }

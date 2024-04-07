@@ -1,39 +1,13 @@
 package bernabemanresa.domain;
 
-public class CD extends Document{
+import bernabemanresa.domain.valueobjects.Artist;
+import bernabemanresa.domain.valueobjects.Company;
+import lombok.Data;
 
-  private String artist;
-  private String company;
+@Data
+public class CD extends Document {
 
-  public CD(String id, String artist, String company) {
-    super(id);
-    this.artist = artist;
-    this.company = company;
-  }
+  private Artist artist;
+  private Company company;
 
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) {
-      return true;
-    }
-    if (!(o instanceof CD cd)) {
-      return false;
-    }
-    if (!super.equals(o)) {
-      return false;
-    }
-
-    if (!artist.equals(cd.artist)) {
-      return false;
-    }
-    return company.equals(cd.company);
-  }
-
-  @Override
-  public int hashCode() {
-    int result = super.hashCode();
-    result = 31 * result + artist.hashCode();
-    result = 31 * result + company.hashCode();
-    return result;
-  }
 }

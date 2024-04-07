@@ -20,7 +20,7 @@ public class DefaultDocumentFinder implements DocumentFinder {
 
   @Override
   public Document find(Document document) {
-    return documentsRepository.getById(document.getId());
+    return documentsRepository.getById(document.getDocumentIdentifier().value());
   }
 
   @Override
