@@ -4,27 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c4d90dd-e598-47cc-b92f-a914ee6d958a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/bernabemanresa/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bernabemanresa/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/open_closed/File.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/Measurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/open_closed/Measurable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/Progress.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/open_closed/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/open_closed/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/open_closed/Tests.java" afterDir="false" />
+    <list default="true" id="0c4d90dd-e598-47cc-b92f-a914ee6d958a" name="Changes" comment="Update pom">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/DemoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentAdder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentDeletion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/CD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Document.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/ports/DocumentAdder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/ports/DocumentDeletion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/ports/DocumentFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/ports/DocumentsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/infrastucture/InMemoryDocumentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bernabemanresa/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/File.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/Measurable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/open_closed/Song.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/open_closed/Tests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,9 +55,111 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="bernabemanresa.domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Tests">
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bernabemanresa.example.open_closed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bernabemanresa.example.open_closed" />
+      <option name="MAIN_CLASS_NAME" value="bernabemanresa.example.open_closed.Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.getAllDocuments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bernabemanresa.example.open_closed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bernabemanresa.example.open_closed" />
+      <option name="MAIN_CLASS_NAME" value="bernabemanresa.example.open_closed.Tests" />
+      <option name="METHOD_NAME" value="getAllDocuments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.getDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bernabemanresa.example.open_closed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bernabemanresa.example.open_closed" />
+      <option name="MAIN_CLASS_NAME" value="bernabemanresa.example.open_closed.Tests" />
+      <option name="METHOD_NAME" value="getDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.saveDocument (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bernabemanresa.example.open_closed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bernabemanresa.example.open_closed" />
+      <option name="MAIN_CLASS_NAME" value="bernabemanresa.example.open_closed.Tests" />
+      <option name="METHOD_NAME" value="saveDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.saveDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.open_closed.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.open_closed" />
+      <option name="MAIN_CLASS_NAME" value="org.example.open_closed.Tests" />
+      <option name="METHOD_NAME" value="saveDocument" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Tests" />
+        <item itemvalue="JUnit.Tests.getAllDocuments" />
+        <item itemvalue="JUnit.Tests.getDocument" />
+        <item itemvalue="JUnit.Tests.saveDocument (1)" />
+        <item itemvalue="JUnit.Tests.saveDocument" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,6 +169,51 @@
       <option name="presentableId" value="Default" />
       <updated>1712412322024</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1712412686388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712412686388</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update pom">
+      <option name="closed" value="true" />
+      <created>1712413058911</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712413058911</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Update pom" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update pom" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java</url>
+          <line>54</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
