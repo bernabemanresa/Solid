@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c4d90dd-e598-47cc-b92f-a914ee6d958a" name="Changes" comment="Create Basic in memory CRUD">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Artist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/DocumentIdentifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/DocumentTitle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Editorial.java" afterDir="false" />
+    <list default="true" id="0c4d90dd-e598-47cc-b92f-a914ee6d958a" name="Changes" comment="Refactor to Value Objects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/application/DefaultDocumentFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/CD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/CD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/Document.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/infrastucture/InMemoryDocumentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/infrastucture/InMemoryDocumentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/DocumentIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/DocumentIdentifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/DocumentTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/DocumentTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Editorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bernabemanresa/domain/valueobjects/Editorial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,7 @@
       <recent name="bernabemanresa.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Tests">
+  <component name="RunManager" selected="JUnit.Tests.saveDocument (1)">
     <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -143,10 +137,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Tests.saveDocument (1)" />
         <item itemvalue="JUnit.Tests" />
         <item itemvalue="JUnit.Tests.getAllDocuments" />
         <item itemvalue="JUnit.Tests.getDocument" />
-        <item itemvalue="JUnit.Tests.saveDocument (1)" />
         <item itemvalue="JUnit.Tests.saveDocument" />
       </list>
     </recent_temporary>
@@ -184,14 +178,34 @@
       <option name="project" value="LOCAL" />
       <updated>1712482297111</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor to Value Objects">
+      <option name="closed" value="true" />
+      <created>1712528356895</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712528356895</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="Update pom" />
     <MESSAGE value="Create Basic in memory CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Basic in memory CRUD" />
+    <MESSAGE value="Refactor to Value Objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor to Value Objects" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/bernabemanresa/example/open_closed/Tests.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
