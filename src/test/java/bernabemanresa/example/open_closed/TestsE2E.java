@@ -20,7 +20,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 @TestInstance(Lifecycle.PER_CLASS)
-class Tests {
+class TestsE2E {
 
   @Autowired
   DocumentAdder documentAdder;
